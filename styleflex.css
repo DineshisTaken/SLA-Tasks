@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body,
+.container
+{
+    min-height: 100vh;
+    background-color: aquamarine;
+
+}
+.container{
+    display: flex;
+}
+.header{
+    flex: 1;
+    border-radius: 2em;
+    background-color: blueviolet;
+}
+section{
+    flex: 4;
+    border-radius: 2em;
+    display: flex;
+}
+.col-left{
+    flex: 1;
+    background-color: darkred;
+    border-radius: 2em;
+}
+.col-right{
+    flex: 1;
+    background-color: aqua;
+    border-radius: 2em;
+}
+.container-second section
+{
+    flex-direction: row-reverse;
+}
+footer
+{
+    flex:1;
+    border-radius: 2em;
+    background-color: rgb(red, green, blue);
+    flex-direction: column;
+}
+@media(max-width:960px)
+{
+    sect
+}
