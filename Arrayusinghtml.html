@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print array</title>
+</head>
+<body>
+    <h2> My colours: </h2>
+    <p id="demo"></p>
+    <button onclick="changecolours()">change colours</button>
+    <script>
+        const colours=["red","green","blue","yellow"];
+        let currentIndex=0;
+
+        function changecolours()
+        {
+            if(currentIndex<colours.length)
+        {
+            document.getElementById("demo").innerText=colours[currentIndex];
+            currentIndex++;
+
+        }
+        else{
+            document.getElementById("demo").innerText="no more colours";
+
+        }
+        }
+    </script>
+</body>
+</html>
