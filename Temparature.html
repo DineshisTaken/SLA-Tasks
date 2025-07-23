@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temparature</title>
+<script>
+    function fahrenheit(){
+        let a=document.getElementById("Temparature").value;
+        let fahrenheit=(a*9/5)+32;
+        document.getElementById("demo").innerHTML=fahrenheit;
+    }
+
+    function celsius(){
+        let a=document.getElementById("Temparature").value;
+        let celsius=(a-32)*5/9;
+        document.getElementById("demo").innerHTML=celsius;
+    }    
+</script>
+
+</head>
+<body>
+    <label for="Temparature">Temparature</label>
+    <input type="number" id="Temparature" name="Temparature"><br><br>
+    <button type="button" onclick="celsius()">celsius</button>
+    <button type="button" onclick="fahrenheit()">fahrenheit</button>
+    <p>The Result is:</p>
+    <p id="demo"></p>
+</body>
+</html>
