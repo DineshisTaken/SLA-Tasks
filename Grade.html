@@ -7,13 +7,13 @@
 <body>
   <h2>Student Grade Checker</h2>
   <p>Enter your marks (0 - 100):</p>
-  <input type="number" id="marksInput" />
+  <input type="number" id="marks" />
   <button onclick="checkGrade()">Check Grade</button>
   <p id="gradeResult"></p>
 
   <script>
     function checkGrade() {
-      const marks = document.getElementById("marksInput").value;
+      const marks = document.getElementById("marks").value;
       const gradeOutput = document.getElementById("gradeResult");
 
       if (marks === "" || marks < 0 || marks > 100) {
